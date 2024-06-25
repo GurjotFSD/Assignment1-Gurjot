@@ -1,0 +1,28 @@
+
+<ion-content>
+  <ion-card *ngIf="filteredData">
+    <ion-card-header>
+      <ion-card-title>{{ filteredData.prname }}</ion-card-title>
+      <ion-card-subtitle>Date: {{ filteredData.date }}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <p><strong>Total Cases:</strong> {{ filteredData.totalcases }}</p>
+      <p><strong>Total Cases (Last 7 Days):</strong> {{ filteredData.numtotal_last7 }}</p>
+      <p><strong>Rate of Cases (Total):</strong> {{ filteredData.ratecases_total }}</p>
+      <p><strong>Total Deaths:</strong> {{ filteredData.numdeaths }}</p>
+      <p><strong>Total Deaths (Last 7 Days):</strong> {{ filteredData.numdeaths_last7 }}</p>
+      <p><strong>Rate of Deaths:</strong> {{ filteredData.ratedeaths }}</p>
+      <p><strong>Rate of Cases (Last 7 Days):</strong> {{ filteredData.ratecases_last7 }}</p>
+      <p><strong>Rate of Deaths (Last 7 Days):</strong> {{ filteredData.ratedeaths_last7 }}</p>
+      <p><strong>Total Cases (Last 14 Days):</strong> {{ filteredData.numtotal_last14 }}</p>
+      <p><strong>Total Deaths (Last 14 Days):</strong> {{ filteredData.numdeaths_last14 }}</p>
+      <p><strong>Rate of Cases (Last 14 Days):</strong> {{ filteredData.ratetotal_last14 }}</p>
+      <p><strong>Rate of Deaths (Last 14 Days):</strong> {{ filteredData.ratedeaths_last14 }}</p>
+      <p><strong>Average Cases (Last 7 Days):</strong> {{ filteredData.avgcases_last7 }}</p>
+      <p><strong>Average Incidence (Last 7 Days):</strong> {{ filteredData.avgincidence_last7 }}</p>
+      <p><strong>Average Deaths (Last 7 Days):</strong> {{ filteredData.avgdeaths_last7 }}</p>
+      <p><strong>Average Rate of Deaths (Last 7 Days):</strong> {{ filteredData.avgratedeaths_last7 }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+  

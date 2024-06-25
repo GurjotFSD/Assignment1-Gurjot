@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>detail</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <app-ontario></app-ontario>
+
+  <div>
+    <h2>Detail Data</h2>
+    <ul>
+      <li><strong>Reported Date:</strong> {{ detailData['Reported Date'] }}</li>
+      <li><strong>Presumptive Positive:</strong> {{ detailData['Presumptive Positive'] }}</li>
+      <li><strong>Under Investigation:</strong> {{ detailData['Under Investigation'] }}</li>
+    </ul>
+  </div>
+
+  <div>
+    <h2>Message from Ontario Tab</h2>
+    <p>{{ message }}</p>
+  </div>
+
+  <ion-button (click)="sendMessage()">Send Message to Ontario Tab</ion-button>
+  
+</ion-content>

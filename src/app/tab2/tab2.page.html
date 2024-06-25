@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Ontario Status
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <app-ontario></app-ontario>
+
+  <div>
+    <h2>Message from Detail Page</h2>
+    <p>{{ message }}</p>
+  </div>
+  <div>
+    <h2>Records</h2>
+  <ul>
+    <li *ngFor="let record of records" (click)="onSelect(record)">
+      <strong>Reported Date:</strong> {{ record['Reported Date'] }} <br>
+      <strong>Presumptive Positive:</strong> {{ record['Presumptive Positive'] }} <br>
+      <strong>Under Investigation:</strong> {{ record['Under Investigation'] }} <br>
+    </li>
+  </ul>
+  </div>
+</ion-content>
